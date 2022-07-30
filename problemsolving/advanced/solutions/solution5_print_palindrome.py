@@ -13,4 +13,4 @@ def is_palindrome(number):
             print('It is a palindrome')
             break
 
-ans = is_palindrome('983')
+ans = is_palindrome('983389')
