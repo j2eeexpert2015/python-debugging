@@ -1,6 +1,3 @@
-# Python3 Program to find
-# transpose of a matrix
-
 N = 4
 
 
