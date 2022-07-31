@@ -12,7 +12,7 @@ def sum_of_value(arr, value):
     length_of_array = len(arr)
     for i in range(0, length_of_array):
         if math.fmod(arr[i], value) == 0:
-            total_sum = total_sum + arr[i]
+            total_sum = + arr[i]
     print("sum is :", total_sum)
     return total_sum
 
