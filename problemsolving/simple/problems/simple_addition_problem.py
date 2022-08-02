@@ -8,4 +8,4 @@ sum = sum + second
 print('Enter the third number to add:')
 third = input()
 sum = sum + first
-print('The sum is ' , sum)
+print('The sum is :' , sum)
