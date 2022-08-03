@@ -1,11 +1,11 @@
 sum = 0
 print('Enter the first number to add:')
-first = input()
+first = int(input())
 sum = sum + first
 print('Enter the second number to add:')
-second = input()
+second = int(input())
 sum = sum + second
 print('Enter the third number to add:')
-third = input()
-sum = sum + first
-print('The sum is :' , sum)
+third = int(input())
+sum = sum + third
+print('The sum is ' , sum)
