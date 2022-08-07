@@ -1,10 +1,10 @@
-from .die import Die
-from .utils import i_just_throw_an_exception
+from .die import Dice
+from .utils import complete_the_process
 
 class GameRunner:
 
     def __init__(self):
-        self.dice = Die.create_dice(5)
+        self.dice = Dice.create_dice(5)
         self.reset()
 
     def reset(self):
@@ -16,7 +16,6 @@ class GameRunner:
         total = 0
         for die in self.dice:
             total += 1
-            #total = total + die.value
         return total
 
     @classmethod
@@ -32,7 +31,7 @@ class GameRunner:
             for die in runner.dice:
                 print(die.show())
 
-            guess = input("Sigh. What is your guess?: ")
+            guess = input("What is your guess?: ")
             guess = int(guess)
 
             if guess == runner.answer():
@@ -58,4 +57,4 @@ class GameRunner:
             if prompt == 'y' or prompt == '':
                 continue
             else:
-                i_just_throw_an_exception()
+                complete_the_process()

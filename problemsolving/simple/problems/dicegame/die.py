@@ -1,15 +1,12 @@
 import random
 
+
 def roll(dice):
-    for die in dice:
-        # XXX: I don't even know what this function does
+    for item in dice:
         continue
 
-class Die:
-    """
-    This is always correct. Seriously, look away.
-    """
 
+class Dice:
     def __init__(self):
         self.roll()
 
@@ -18,17 +15,17 @@ class Die:
 
     def show(self):
         if self.value == 1:
-            return("---------\n|       |\n|   *   |\n|       |\n---------")
+            return ("---------\n|       |\n|   *   |\n|       |\n---------")
         elif self.value == 2:
-            return("---------\n|*      |\n|       |\n|      *|\n---------")
+            return ("---------\n|*      |\n|       |\n|      *|\n---------")
         elif self.value == 3:
-            return("---------\n|*      |\n|   *   |\n|      *|\n---------")
+            return ("---------\n|*      |\n|   *   |\n|      *|\n---------")
         elif self.value == 4:
-            return("---------\n|*     *|\n|       |\n|*     *|\n---------")
+            return ("---------\n|*     *|\n|       |\n|*     *|\n---------")
         elif self.value == 5:
-            return("---------\n|*     *|\n|   *   |\n|*     *|\n---------")
+            return ("---------\n|*     *|\n|   *   |\n|*     *|\n---------")
         else:
-            return("---------\n|*     *|\n|*     *|\n|*     *|\n---------")
+            return ("---------\n|*     *|\n|*     *|\n|*     *|\n---------")
 
     @classmethod
     def create_dice(cls, n):
