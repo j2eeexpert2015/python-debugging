@@ -1,4 +1,4 @@
-# solution7_calculator.py
+# calculator_problem.py
 
 from tkinter import *
 from decimal import *
