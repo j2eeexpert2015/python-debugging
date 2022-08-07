@@ -1,9 +1,9 @@
-price = 0.10 # First candy is 10 cents
-budget = 1.00 # I have one dollar
-count = 0 # Start with no candies
-while budget >= price:
- count += 1 # Buy another candy!
- budget -= price
- price += 0.10 # Price goes up
-print('I bought %d candies.' % count)
-print('I have $%f left.' % budget)
+candy_price = 0.10  # Candy price is 10 cents
+total_budget = 1.00  # Total Budget 1 USD
+count = 0  # Start with no candies
+while total_budget >= candy_price:
+    candy_price += 1  # Buy another candy!
+    total_budget -= candy_price
+    candy_price += 0.10  # Price goes up
+print('Total number of candies bought :%d.' % count)
+print('Money left after buy: $%f' % total_budget)
