@@ -1,14 +1,10 @@
-# Just count the stupid dice
 import random
 
 def roll(dice):
     for die in dice:
         die.roll()
 
-class Die:
-    """
-    This is always correct. Seriously, look away.
-    """
+class Dice:
 
     def __init__(self):
         self.roll()
