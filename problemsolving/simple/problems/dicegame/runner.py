@@ -1,4 +1,4 @@
-from .die import Dice
+from .dice import Dice
 from .utils import complete_the_process
 
 class GameRunner:
