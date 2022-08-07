@@ -42,11 +42,11 @@ with app.app_context():
 @app.route('/')
 def home():
     all_pizzas = Pizza.query.filter_by(fulfilled=False)
-    return render_template('home.html', pizza_orders=all_pizzas)
+    return render_template('index.html', pizza_orders=all_pizzas)
 @app.route('/order', methods=['GET'])
 def pizza_order_form():
     return render_template(
-        'order.html',
+        'add_user.html',
         sizes=PizzaSize,
         crust_types=CrustType,
         toppings=ToppingType)
