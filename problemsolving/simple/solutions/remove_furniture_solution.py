@@ -13,5 +13,6 @@ items = ['book', 'pencil', 'desk', 'door']
 items = remove_furniture(items)
 
 # print remaining items in alphabetical order
+items.sort()
 for item in items:
   print(item)
