@@ -39,7 +39,6 @@ def find_by_author(books_list, last_name):
     return output
 
 def find_by_rating(books_list, lower_bound):
-    """Find books with a rating higher than lower_bound"""
     output = []
     for book in books_list:
         if book["rating"] >= lower_bound:
