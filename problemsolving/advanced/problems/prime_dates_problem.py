@@ -1,11 +1,13 @@
 """
 In this challenge, the task is to debug the existing code to successfully execute all provided test files.
 
-Given two dates each in the format dd-mm-yyyy, you have to find the number of lucky dates between them (inclusive). To see if a date is lucky,
+Given two dates each in the format dd-mm-yyyy, you have to find the number of lucky dates between them (inclusive).
+To see if a date is lucky,
 
-Firstly, sequentially concatinate the date, month and year, into a new integer  erasing the leading zeroes.
-Now if  is divisible by either  or , then we call the date a lucky date.
-For example, let's take the date "02-08-2024". After concatinating the day, month and year, we get  = 2082024. As  is divisible by  so the date "02-08-2024" is called a lucky date.
+Firstly, sequentially concatenate the date, month and year, into a new integer x erasing the leading zeroes.
+Now if  is divisible by either 4 or 7, then we call the date a lucky date.
+For example, let's take the date "02-08-2024". After concatenating the day, month and year,
+we get  = 2082024. As x is divisible by  so the date "02-08-2024" is called a lucky date.
 
 Debug the given function findPrimeDates and/or other lines of code, to find the correct lucky dates from the given input.
 """
@@ -61,7 +63,7 @@ def findPrimeDates(d1, m1, y1, d2, m2, y2):
 for i in range(1, 15):
     month.append(31)
 
-line = input()
+line = "02-08-2025 04-09-2025"
 date = re.split('-| ', line)
 d1 = int(date[0])
 m1 = int(date[1])
