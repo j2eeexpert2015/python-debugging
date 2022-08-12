@@ -37,7 +37,7 @@ matrix = [[1, 2, 3],
 row = 3;
 col = 3;
 
-print("Intial matrix: ");
+print("ntial matrix: ");
 print_matrix(matrix, row, col);
 
 print("Lower triangular matrix: ");
