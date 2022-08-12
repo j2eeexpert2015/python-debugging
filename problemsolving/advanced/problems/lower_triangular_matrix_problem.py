@@ -7,7 +7,7 @@
 def print_lower_triangular_matrix(matrix, row, col):
     for i in range(0, row):
         for j in range(0, col):
-            if (i < j):
+            if (i <= j):
                 print("0", end=" ");
             else:
                 print(matrix[i][j],
@@ -21,15 +21,6 @@ def print_matrix(matrix, row, col):
         for j in range(0, col):
             print(matrix[i][j],end=" ");
         print(" ");
-def print_upper_triangular_matrix(matrix, row, col):
-    for i in range(0, row):
-        for j in range(0, col):
-            if (i > j):
-                print("0", end=" ");
-            else:
-                print(matrix[i][j],
-                      end=" ");
-        print(" ");
 # Driver Code
 matrix = [[1, 2, 3],
           [4, 5, 6],
@@ -37,11 +28,8 @@ matrix = [[1, 2, 3],
 row = 3;
 col = 3;
 
-print("ntial matrix: ");
+print("Initial matrix: ");
 print_matrix(matrix, row, col);
 
 print("Lower triangular matrix: ");
 print_lower_triangular_matrix(matrix, row, col);
-
-print("Upper triangular matrix: ");
-print_upper_triangular_matrix(matrix, row, col);
