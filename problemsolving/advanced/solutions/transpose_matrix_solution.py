@@ -18,6 +18,12 @@ A = [[1, 1, 1, 1],
 
 B = A[:][:]  # To store result
 
+print("Initial matrix is")
+for i in range(N):
+    for j in range(N):
+        print(B[i][j], " ", end='')
+    print()
+
 transpose(A, B)
 
 print("Result matrix is")
