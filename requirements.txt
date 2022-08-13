@@ -1,3 +1,5 @@
+pandas
+numpy
 certifi==2022.6.15
 chardet==4.0.0
 click==7.1.2
