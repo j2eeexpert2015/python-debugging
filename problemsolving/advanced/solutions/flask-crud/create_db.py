@@ -1,7 +1,7 @@
 import sqlite3 as sql
 
 #connect to SQLite
-con = sql.connect('user_db_web.db')
+con = sql.connect('db_web.db')
 
 #Create a Connection
 cur = con.cursor()
