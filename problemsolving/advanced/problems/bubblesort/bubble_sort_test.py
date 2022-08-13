@@ -1,17 +1,22 @@
-import unittest
-import insertion_sort_problem as st
+def bubbleSort(arr):
+    n = len(arr)
+    # Traverse through all array elements
+    for i in range(n):
+        swapped = False
+        # Last i elements are already in place
+        for j in range(0, n-i-1):
+            if arr[j] > arr[j+1] :
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+                swapped = True
+        # IF no two elements were swapped by inner loop, then break
+        if swapped == False:
+            break
 
-class Test_TestValue(unittest.TestCase):
-    def test_simple(self):
-        testList = [4,3,2,1]
-        expectedList = testList.copy()
-        expectedList.sort()
-        actualList=st.bubblesort(testList)
-        self.assertEqual(actualList,expectedList)
+# Driver code to test above
+arr = [64, 34, 25, 12, 22, 11, 90]
 
-    def test_empty(self):
-        testList=[]
-        expectedList = testList.copy()
-        expectedList.sort()
-        actualList=st.bubblesort(testList)
-        self.assertEqual(actualList,expectedList)
+bubbleSort(arr)
+
+print ("Sorted array :")
+for i in range(len(arr)):
+    print ("%d" %arr[i],end=" ")
