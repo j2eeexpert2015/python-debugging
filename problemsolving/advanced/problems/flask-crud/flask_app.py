@@ -43,7 +43,7 @@ def edit_user(uid):
     con = sql.connect("db_web.db")
     con.row_factory = sql.Row
     cur = con.cursor()
-    cur.execute("select * from users where UID=?", (uid,))
+    cur.execute("select * from users where ", )
     data = cur.fetchone()
     return render_template("edit_user.html", datas=data)
 
@@ -52,7 +52,7 @@ def edit_user(uid):
 def delete_user(uid):
     con = sql.connect("db_web.db")
     cur = con.cursor()
-    cur.execute("delete from users where UID=?", (uid,))
+    cur.execute("delete from users ", )
     con.commit()
     flash('User Deleted', 'warning')
     return redirect(url_for("index"))
