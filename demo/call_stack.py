@@ -1,6 +1,6 @@
 dummy_global_var = 0
 def method3(input):
-    dummy_var_1 = 3
+    dummy_var_3 = 3
     dummy_global_var=3
     return input + 1
 
