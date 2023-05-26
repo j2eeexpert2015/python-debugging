@@ -9,7 +9,7 @@ def main():
     person_list = datautil.get_person_list_with_other_data_types()
     sample_dict = {"key_string": "James", "key_integer": 25}
     sample_set = {1, 2, 3}
-    print "Program completed ..."
+    print("Program completed ...")
 
 
 if __name__ == '__main__':
