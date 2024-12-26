@@ -1,18 +1,17 @@
-pandas
-numpy
-jupyter
-requests==2.6.0
-certifi==2022.6.15
-chardet==4.0.0
-click==7.1.2
-Flask==1.1.2
-Flask-SQLAlchemy==2.4.4
-idna==2.10
-itsdangerous==1.1.0
-Jinja2==2.11.2
-MarkupSafe==1.1.1
-python-dotenv==0.15.0
-SQLAlchemy==1.3.22
-urllib3==1.26.2
-Werkzeug==1.0.1
-
+pandas>=1.3.0  # Updated to a stable version that avoids compatibility issues
+numpy>=1.21.0  # Ensure compatibility with pandas and modern Python versions
+jupyter  # Latest version is fine, as it handles dependencies automatically
+requests>=2.31.0  # Use a modern version compatible with other packages
+certifi>=2023.6.15  # Update to align with newer dependencies
+chardet>=4.0.0  # No change, latest version compatible
+click>=8.1.3  # Update to avoid compatibility issues with Flask
+Flask>=2.0.3  # Updated to a more secure and stable version
+Flask-SQLAlchemy>=2.5.1  # Ensure compatibility with updated Flask
+idna>=3.4  # Use an updated version
+itsdangerous>=2.0.1  # Updated for Flask compatibility
+Jinja2>=3.0.3  # Updated for compatibility with Flask 2.x
+MarkupSafe>=2.0.1  # Updated to match Jinja2
+python-dotenv>=0.21.0  # Use a modern version for bug fixes
+SQLAlchemy>=1.4.44  # Use a newer, more stable version
+urllib3>=1.26.16  # Ensure compatibility with requests
+Werkzeug>=2.0.3  # Align with Flask 2.x
